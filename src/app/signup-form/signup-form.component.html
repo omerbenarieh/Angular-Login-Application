@@ -1,0 +1,36 @@
+<div class="center-container">
+  <div>
+    <mat-form-field>
+      <mat-label>Full Name</mat-label>
+      <input type="text" matInput #fullName />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input type="email" matInput #userEmail />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input type="password" matInput #userPassword />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="createUser(userEmail.value, userPassword.value, fullName.value)"
+    >
+      Create User
+    </button>
+  </div>
+
+  <div>
+    <button mat-raised-button color="warn" (click)="goToLogin()">Login</button>
+  </div>
+</div>

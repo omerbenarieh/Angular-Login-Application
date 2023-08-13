@@ -1,0 +1,11 @@
+<div class="user-container">
+  <div *ngIf="authService.userData as user" class="center-content">
+    <h2>Hello There {{ user.displayName }}, You just Logged in :)</h2>
+  </div>
+
+  <div class="center-content">
+    <button mat-raised-button color="warn" (click)="authService.SignOut()">
+      Log Out
+    </button>
+  </div>
+</div>

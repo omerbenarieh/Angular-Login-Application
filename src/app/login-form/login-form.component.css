@@ -1,0 +1,19 @@
+button {
+  margin: 5px;
+}
+
+mat-label {
+  font-size: 12px;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.btns-container {
+  margin-top: 20px;
+}
